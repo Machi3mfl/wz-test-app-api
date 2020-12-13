@@ -2,4 +2,12 @@ var alerts = require('./alerts');
 var agents = require('./agents');
 var rules = require('./rules');
 
-module.exports = [].concat(alerts, agents, rules);
+// root 
+const baseRoute = [
+    { method: 'GET', path: '/', handler: (req, h) => {
+            h.response({ success: true, message: 'OK' });
+        } 
+    }
+]
+
+module.exports = baseRoute.concat(alerts, agents, rules);
