@@ -3,7 +3,7 @@ const routes = require('./routes');
 
 const init = async () => {
 
-    const port = 4000;
+    const port = process.env.PORT || 4000;
     /////////// initialize server
     const server = Hapi.server({
         port: port,
