@@ -5,9 +5,9 @@ var rules = require('./rules');
 // root 
 const baseRoute = [
     { method: 'GET', path: '/', handler: (req, h) => {
-            h.response({ success: true, message: 'OK' });
+            return h.response({ success: true, message: 'OK' });
         } 
     }
 ]
 
-module.exports = baseRoute.concat(alerts, agents, rules);
+module.exports = [].concat(baseRoute, alerts, agents, rules);
