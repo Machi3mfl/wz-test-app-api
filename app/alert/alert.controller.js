@@ -70,7 +70,14 @@ function getById(ids){
     // order ids
     ids = ids.sort();
     for(let i = 0; i < ids.length; i++){
-        let index = parseInt(ids[i]);
+        
+        // id = 0 doesnt exist
+        if(parseInt(ids[i]) === 0){
+            continue;
+        }
+
+        // index array - 1
+        let index = parseInt(ids[i]) - 1;
         // if index exist
         if(alerts[index]){
             // push to array
