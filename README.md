@@ -20,10 +20,10 @@ $ npm run dev
 
 That's it! You should be able to play around your API GETting, POSTing, PUTing AND DELETEing Tasks. The end-points are as described in the `/routes/*.js` file:
 
-* **GET** http://localhost:3000/alerts
-* **GET** http://localhost:3000/agents
-* **GET** http://localhost:3000/agents/{agent_id}
-* **GET** http://localhost:3000/rules
-* **GET** http://localhost:3000/rules/{rules_id}
+* **GET** http://localhost:4000/alerts
+* **GET** http://localhost:4000/agents
+* **GET** http://localhost:4000/agents/{agent_id}
+* **GET** http://localhost:4000/rules
+* **GET** http://localhost:4000/rules/{rules_id}
 
 
