@@ -2,6 +2,8 @@ const controller = require('../app/rule/rule.controller');
 
 /**
  * 
+ * Get Rule
+ * 
  * @param {*} req 
  * @param {*} h 
  */
@@ -22,6 +24,8 @@ function get(req, h){
 }
 
 /**
+ * 
+ * Get Rule by Id
  * 
  * @param {*} req 
  * @param {*} h 

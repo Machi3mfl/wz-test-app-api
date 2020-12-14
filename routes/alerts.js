@@ -18,6 +18,8 @@ const controller = require('../app/alert/alert.controller');
 
 /**
  * 
+ * Get Alerts
+ * 
  * @param {*} req 
  * @param {*} h 
  */

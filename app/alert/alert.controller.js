@@ -1,4 +1,3 @@
-//const Database = require('../../database');
 const { getDB } = require('../../utils/utils');
 
 
@@ -13,6 +12,7 @@ function getJSONAlerts(){
 
 /**
  * 
+ * Get all alerts data, can be filtered by limit and offset
  * 
  * @param {*} params 
  */
@@ -47,6 +47,8 @@ function getAll({ limit, offset }){
 }
 
 /**
+ * 
+ * Get alert by id
  * 
  * @param {*} ids 
  */

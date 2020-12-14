@@ -2,6 +2,8 @@ const controller = require('../app/agent/agent.controller');
 
 /**
  * 
+ * Get Agents
+ * 
  * @param {*} req 
  * @param {*} h 
  */
@@ -22,6 +24,8 @@ function get(req, h){
 }
 
 /**
+ * 
+ * * Get Agent by Id
  * 
  * @param {*} req 
  * @param {*} h 

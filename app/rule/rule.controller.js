@@ -1,9 +1,7 @@
-//const Database = require('../../database');
-//const Database = require('../../database');
 const { getDB } = require('../../utils/utils');
 
 /**
- * 
+ * Get rules from json
  */
 function getJSONRules(){
     return getParsedRules();
@@ -11,7 +9,7 @@ function getJSONRules(){
 
 
 /**
- * 
+ * Parsed rules
  */
 function getParsedRules(){
     // get data from db
@@ -73,22 +71,12 @@ function getParsedRules(){
 }
 
 
-/**
- * 
- {
-    total_items: number,
-    data: {
-        id: string
-        name: string
-        ip: string total_data: number
-    }[] 
-}
-
-*/
 
 /**
- * 
+ * Get all rules, can be filtered by limit and offset
+ * @param {*} param0 
  */
+
 function getAll({limit, offset}){
     let list = getJSONRules();
 
@@ -118,7 +106,7 @@ function getAll({limit, offset}){
 }
 
 /**
- * 
+ * Get rule by id
  * @param {*} id 
  */
 function getById(id){

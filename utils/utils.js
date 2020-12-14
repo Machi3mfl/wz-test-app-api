@@ -1,5 +1,7 @@
 const fs = require('fs');
 /**
+ * Get alerts data from Json file
+ * Add id Alert with index array property
  * 
  */
 function getDB(){

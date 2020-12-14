@@ -1,9 +1,7 @@
-//const Database = require('../../database');
-//const Database = require('../../database');
 const { getDB } = require('../../utils/utils');
 
 /**
- * 
+ * Get alerts with Json Format
  */
 function getJSONAgents(){
     return getParsedAgents();
@@ -13,7 +11,7 @@ function getJSONAgents(){
 
 
 /**
- * 
+ * Parsed JSON Agert with api response format
  */
 function getParsedAgents(){
     // get alerts from db
@@ -70,21 +68,13 @@ function getParsedAgents(){
 }
 
 
-/**
- * 
- {
-    total_items: number,
-    data: {
-        id: string
-        name: string
-        ip: string total_alerts: number
-    }[] 
-}
-
-*/
 
 /**
- * 
+ *  
+ * Get all agents data, can filter with limit and/or offset 
+ *
+ * @param {*} limit
+ * @param {*} offset
  */
 function getAll({ limit, offset }){
     let agents = getParsedAgents();
@@ -119,6 +109,8 @@ function getAll({ limit, offset }){
 }
 
 /**
+ * 
+ * Get agent data by id
  * 
  * @param {*} id 
  */
